@@ -12,3 +12,18 @@
     justify-content: space-between;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .sign-in {
+    width: 100%;
+
+    .buttons {
+      width: 100%;
+
+      .custom-button {
+        min-width: unset;
+        padding: 0 15px;
+      }
+    }
+  }
+}

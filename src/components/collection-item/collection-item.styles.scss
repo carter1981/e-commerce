@@ -41,12 +41,42 @@
     font-size: 18px;
 
     .name {
-      width: 90%;
+      width: 75%;
       margin-bottom: 15px;
     }
 
     .price {
-      width: 10%;
+      width: 25%;
     }
   }
+}
+
+@media screen and (max-width: 800px) {
+  .collection-item {
+    width: 40vw;
+
+    &:hover {
+      .image {
+        opacity: unset;
+      }
+
+      .custom-button {
+        opacity: unset;
+      }
+    }
+
+    .custom-button {
+      min-width: unset;
+      opacity: 0.9;
+      display: block;
+      padding: 0 10px;
+      font-size: 10px;
+    }
+
+    .collection-footer {
+      font-size: 12px;
+    }
+  }
+
+
 }
