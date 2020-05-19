@@ -2,15 +2,7 @@ import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
 
-const config = {
-  apiKey: "AIzaSyDa_TuEA1_0F3KSt02hqQ3p3e0zxTFKs6o",
-  authDomain: "online-shop-2eb75.firebaseapp.com",
-  databaseURL: "https://online-shop-2eb75.firebaseio.com",
-  projectId: "online-shop-2eb75",
-  storageBucket: "online-shop-2eb75.appspot.com",
-  messagingSenderId: "9016144656",
-  appId: "1:9016144656:web:d92903ac47d81eb05beb95"
-};
+const config = {}  //Import config from firebase;
 
 export const createUserProfileDocument = async (userAuth, additionalData) => {
   if (!userAuth) return;
